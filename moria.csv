@@ -1,0 +1,174 @@
+Area,Exercise Number,Exercise Requirements,Status
+Memory and Data Layout,1,"Declare a char, int, and pointer and print their sizes using sizeof",Finished
+Memory and Data Layout,2,Write a function that manually sets bytes in an int using char*,Not Started
+Memory and Data Layout,3,Demonstrate padding and alignment in a struct with mixed types,Not Started
+Memory and Data Layout,4,Implement a byte-level memcpy using pointers,Not Started
+Memory and Data Layout,5,Visualize a struct in memory by dumping its byte layout,Not Started
+Memory and Data Layout,6,Show the difference between little-endian and big-endian,Not Started
+Memory and Data Layout,7,Manually swap bytes in an int to convert between endianness,Not Started
+Memory and Data Layout,8,Use a union to alias a float and int and inspect the representation,Not Started
+Memory and Data Layout,9,Read an array of structs from raw memory using pointer arithmetic,Not Started
+Memory and Data Layout,10,Create a struct with nested structs and print offsets manually,Not Started
+Strings and Byte Buffers,1,Implement strlen from scratch without stdlib,Not Started
+Strings and Byte Buffers,2,Implement strcpy and strncpy by hand,Not Started
+Strings and Byte Buffers,3,Write a tokenizer that splits a string by spaces,Not Started
+Strings and Byte Buffers,4,Implement a byte-safe string concatenation function,Not Started
+Strings and Byte Buffers,5,Create a dynamic buffer that doubles in size when full,Not Started
+Strings and Byte Buffers,6,Implement a simple sprintf with only %d and %s support,Not Started
+Strings and Byte Buffers,7,Write an escape/unescape function for quotes and backslashes,Not Started
+Strings and Byte Buffers,8,Implement a manual hex dump of a string buffer,Not Started
+Strings and Byte Buffers,9,Build a basic JSON validator for flat key-value strings,Not Started
+Strings and Byte Buffers,10,Write a simple REPL that reads into a manually managed buffer,Not Started
+Manual Memory Allocation,1,Implement bump pointer allocator using a fixed-size array,Not Started
+Manual Memory Allocation,2,Use sbrk to allocate a memory page and return pointers,Not Started
+Manual Memory Allocation,3,Track simple allocations using a linked list of blocks,Not Started
+Manual Memory Allocation,4,Implement free to mark blocks reusable in your allocator,Not Started
+Manual Memory Allocation,5,Add coalescing to your free blocks,Not Started
+Manual Memory Allocation,6,Add realloc support to your allocator,Not Started
+Manual Memory Allocation,7,Detect memory leaks on exit by walking your free list,Not Started
+Manual Memory Allocation,8,"Support aligned allocations (e.g., 16 or 64 byte aligned)",Not Started
+Manual Memory Allocation,9,Track allocation metadata before the user pointer,Not Started
+Manual Memory Allocation,10,Benchmark your allocator against malloc for small blocks,Not Started
+Syscalls and the Kernel ABI,1,Call write using inline assembly syscall (x86-64),Not Started
+Syscalls and the Kernel ABI,2,Implement your own _exit using syscall,Not Started
+Syscalls and the Kernel ABI,3,Read from stdin using syscall read into a buffer,Not Started
+Syscalls and the Kernel ABI,4,Write a syscall wrapper function for open/read/write/close,Not Started
+Syscalls and the Kernel ABI,5,Implement your own version of perror using errno,Not Started
+Syscalls and the Kernel ABI,6,Write a syscall-based logging function,Not Started
+Syscalls and the Kernel ABI,7,Use getpid via syscall to print your process ID,Not Started
+Syscalls and the Kernel ABI,8,Call mmap using syscall and write into the memory,Not Started
+Syscalls and the Kernel ABI,9,Implement dup/dup2 with syscall to duplicate stdout,Not Started
+Syscalls and the Kernel ABI,10,Manually implement errno management using thread-local storage,Not Started
+File I/O and the Filesystem,1,Open and read a file using syscall and print to stdout,Not Started
+File I/O and the Filesystem,2,Manually seek in a file using syscall lseek,Not Started
+File I/O and the Filesystem,3,Read a directory using getdents syscall and list entries,Not Started
+File I/O and the Filesystem,4,Stat a file using syscall and print size + mode,Not Started
+File I/O and the Filesystem,5,Implement cp command using only syscalls,Not Started
+File I/O and the Filesystem,6,Write a hex viewer using manual read and byte parsing,Not Started
+File I/O and the Filesystem,7,Implement your own touch command,Not Started
+File I/O and the Filesystem,8,Recursively list all files in a directory,Not Started
+File I/O and the Filesystem,9,Copy a directory tree to another location,Not Started
+File I/O and the Filesystem,10,Track file open/close time deltas for benchmarking,Not Started
+Process Creation and Execution,1,Call fork and print parent/child PIDs,Not Started
+Process Creation and Execution,2,Write a function that execs /bin/ls from child,Not Started
+Process Creation and Execution,3,Implement a shell that reads a command and runs it,Not Started
+Process Creation and Execution,4,Handle command arguments and execvp manually,Not Started
+Process Creation and Execution,5,"Chain two commands with a pipe (e.g., `ls | grep txt`)",Not Started
+Process Creation and Execution,6,Implement job control: foreground/background jobs,Not Started
+Process Creation and Execution,7,Print child exit codes with WEXITSTATUS,Not Started
+Process Creation and Execution,8,Run multiple children concurrently with waitpid,Not Started
+Process Creation and Execution,9,"Implement redirection with dup2 (e.g., `cmd > file`)",Not Started
+Process Creation and Execution,10,Add basic signal forwarding from shell to children,Not Started
+Signals and Interrupts,1,Install a signal handler for SIGINT and print a message,Not Started
+Signals and Interrupts,2,Handle SIGSEGV and print a backtrace,Not Started
+Signals and Interrupts,3,Use alarm to time-limit an operation,Not Started
+Signals and Interrupts,4,Catch SIGCHLD to reap zombie processes,Not Started
+Signals and Interrupts,5,Print which signal interrupted a syscall,Not Started
+Signals and Interrupts,6,Write a signal-safe logging function,Not Started
+Signals and Interrupts,7,Use sigaction with SA_RESTART and SA_SIGINFO,Not Started
+Signals and Interrupts,8,Implement longjmp-like error recovery with sigaltstack,Not Started
+Signals and Interrupts,9,Measure latency between signal send and handler run,Not Started
+Signals and Interrupts,10,Block and unblock signals with sigprocmask,Not Started
+Binary Formats and ELF,1,Read an ELF file and print its magic header bytes,Not Started
+Binary Formats and ELF,2,"Parse ELF header and print entry point, section offsets",Not Started
+Binary Formats and ELF,3,List all section names and sizes from an ELF,Not Started
+Binary Formats and ELF,4,Print symbol table and corresponding addresses,Not Started
+Binary Formats and ELF,5,Implement a toy static ELF loader in memory,Not Started
+Binary Formats and ELF,6,Parse and load a minimal relocatable object file,Not Started
+Binary Formats and ELF,7,Extract string table and symbols from a binary,Not Started
+Binary Formats and ELF,8,Resolve dynamic symbols by walking GOT/PLT manually,Not Started
+Binary Formats and ELF,9,Load and run a statically-linked ELF binary from memory,Not Started
+Binary Formats and ELF,10,Build a simple dynamic linker for known symbols,Not Started
+Networking with Raw Sockets,1,Open a UDP socket and send a message to localhost,Not Started
+Networking with Raw Sockets,2,Listen for UDP packets and print incoming data,Not Started
+Networking with Raw Sockets,3,"Build a simple TCP echo server using socket, bind, listen",Not Started
+Networking with Raw Sockets,4,Accept multiple TCP clients using fork or select,Not Started
+Networking with Raw Sockets,5,Send and receive raw ICMP echo requests (ping),Not Started
+Networking with Raw Sockets,6,Craft and send a raw UDP packet with headers,Not Started
+Networking with Raw Sockets,7,Inspect received packet headers (Ethernet/IP/TCP),Not Started
+Networking with Raw Sockets,8,Implement ARP request and parse response,Not Started
+Networking with Raw Sockets,9,Build a basic HTTP GET client using TCP socket,Not Started
+Networking with Raw Sockets,10,Write a packet sniffer that logs all TCP SYN packets,Not Started
+Bootstrapping and Minimal Runtime,1,Write a program with a custom _start entry point,Not Started
+Bootstrapping and Minimal Runtime,2,Pass argc/argv manually to your own main,Not Started
+Bootstrapping and Minimal Runtime,3,Call write syscall directly from _start without C runtime,Not Started
+Bootstrapping and Minimal Runtime,4,Inspect the initial stack layout passed by the kernel,Not Started
+Bootstrapping and Minimal Runtime,5,Print environment variables manually from stack,Not Started
+Bootstrapping and Minimal Runtime,6,Write your own crt0 that initializes and jumps to main,Not Started
+Bootstrapping and Minimal Runtime,7,Implement a minimal printf before main is called,Not Started
+Bootstrapping and Minimal Runtime,8,Use objcopy to strip your binary completely,Not Started
+Bootstrapping and Minimal Runtime,9,Write a boot sector that prints a char in x86 real mode,Not Started
+Bootstrapping and Minimal Runtime,10,Implement a simple kernel that writes to VGA memory,Not Started
+Lock-Free and Atomic Programming,1,Implement compare-and-swap (CAS) using __sync_bool_compare_and_swap,Not Started
+Lock-Free and Atomic Programming,2,Build a lock-free counter with backoff strategies for contention,Not Started
+Lock-Free and Atomic Programming,3,Implement atomic load/store with proper memory ordering (acquire/release),Not Started
+Lock-Free and Atomic Programming,4,Create a lock-free stack using atomic pointer updates,Not Started
+Lock-Free and Atomic Programming,5,Build a lock-free queue (single producer single consumer),Not Started
+Lock-Free and Atomic Programming,6,Implement a lock-free queue (multiple producer multiple consumer),Not Started
+Lock-Free and Atomic Programming,7,Create a hazard pointer system for memory reclamation,Not Started
+Lock-Free and Atomic Programming,8,Build a lock-free hash table with linear probing,Not Started
+Lock-Free and Atomic Programming,9,Implement read-copy-update (RCU) for data structure updates,Not Started
+Lock-Free and Atomic Programming,10,Create an atomic reference counter with overflow detection,Not Started
+Lock-Free and Atomic Programming,11,Build a wait-free bounded queue using atomic arrays,Not Started
+Lock-Free and Atomic Programming,12,Implement memory barriers and study their performance impact,Not Started
+Advanced Concurrency,1,Implement pthread mutex from futex syscalls,Not Started
+Advanced Concurrency,2,Build condition variables using futex and atomic operations,Not Started
+Advanced Concurrency,3,Create a reader-writer lock with writer preference,Not Started
+Advanced Concurrency,4,Implement a spinlock with exponential backoff,Not Started
+Advanced Concurrency,5,Build a work-stealing thread pool from scratch,Not Started
+Advanced Concurrency,6,Create barrier synchronization for N threads,Not Started
+Advanced Concurrency,7,Implement a semaphore using atomic operations,Not Started
+Advanced Concurrency,8,Build a thread-safe object pool with generation counters,Not Started
+Advanced Concurrency,9,Create a producer-consumer system with multiple queues,Not Started
+Advanced Concurrency,10,Implement user-space threading (M:N scheduler),Not Started
+Advanced Concurrency,11,Build a coroutine library using setjmp/longjmp,Not Started
+Advanced Concurrency,12,Create an event-driven system with epoll/kqueue,Not Started
+Bitwise Operations and Data Structures,1,"Implement bit manipulation: set, clear, toggle, test individual bits",Not Started
+Bitwise Operations and Data Structures,2,Count number of set bits (population count) without builtin,Not Started
+Bitwise Operations and Data Structures,3,Find first/last set bit position using bit tricks,Not Started
+Bitwise Operations and Data Structures,4,Implement bit reversal for 32-bit integers,Not Started
+Bitwise Operations and Data Structures,5,Create a bit vector data structure with set/get/clear operations,Not Started
+Bitwise Operations and Data Structures,6,Build a Bloom filter using multiple hash functions,Not Started
+Bitwise Operations and Data Structures,7,Implement a bitmap allocator for memory management,Not Started
+Bitwise Operations and Data Structures,8,Create a bitwise trie for IP address routing,Not Started
+Bitwise Operations and Data Structures,9,Build a compressed bit array with run-length encoding,Not Started
+Bitwise Operations and Data Structures,10,Implement XOR-based encryption/decryption,Not Started
+Bitwise Operations and Data Structures,11,Create a bit-packed structure for storing multiple small integers,Not Started
+Bitwise Operations and Data Structures,12,Build a perfect hash function using bit manipulation,Not Started
+Bitwise Operations and Data Structures,13,Implement Gray code generation and conversion,Not Started
+Bitwise Operations and Data Structures,14,Create a bitwise priority queue using bit scanning,Not Started
+Bitwise Operations and Data Structures,15,Build a compression algorithm using bit manipulation (simple LZ77),Not Started
+Advanced Memory Management,1,Implement a slab allocator for fixed-size objects,Not Started
+Advanced Memory Management,2,Build a buddy allocator with power-of-2 block sizes,Not Started
+Advanced Memory Management,3,Create a pool allocator with different sized pools,Not Started
+Advanced Memory Management,4,Implement a stack allocator with rewind capability,Not Started
+Advanced Memory Management,5,Build a ring buffer allocator for streaming data,Not Started
+Advanced Memory Management,6,Create copy-on-write memory management,Not Started
+Advanced Memory Management,7,Implement memory-mapped file handling with lazy loading,Not Started
+Advanced Memory Management,8,Build a garbage collector (mark-and-sweep),Not Started
+Advanced Memory Management,9,Create a reference counting system with cycle detection,Not Started
+Advanced Memory Management,10,Implement a generational garbage collector,Not Started
+Advanced Memory Management,11,Build a memory profiler that tracks allocation patterns,Not Started
+Advanced Memory Management,12,Create a virtual memory simulator with page tables,Not Started
+Hardware Interface and Optimization,1,Measure CPU cache line size and demonstrate cache effects,Not Started
+Hardware Interface and Optimization,2,Implement prefetching to improve memory access patterns,Not Started
+Hardware Interface and Optimization,3,Write SIMD operations for array processing (SSE/AVX if available),Not Started
+Hardware Interface and Optimization,4,Create branch prediction friendly code structures,Not Started
+Hardware Interface and Optimization,5,Implement timing using CPU cycle counters (RDTSC),Not Started
+Hardware Interface and Optimization,6,Build a performance profiler using hardware performance counters,Not Started
+Hardware Interface and Optimization,7,Create false sharing examples and solutions,Not Started
+Hardware Interface and Optimization,8,Implement memory fencing for different architectures,Not Started
+Hardware Interface and Optimization,9,Build a CPU topology detector,Not Started
+Hardware Interface and Optimization,10,Create NUMA-aware memory allocation,Not Started
+Hardware Interface and Optimization,11,Implement instruction-level parallelism examples,Not Started
+Hardware Interface and Optimization,12,Build a micro-benchmark suite for different operations,Not Started
+Systems Programming Projects,1,Build a minimal HTTP server with custom memory management,Not Started
+Systems Programming Projects,2,Create a database storage engine with custom B-tree implementation,Not Started
+Systems Programming Projects,3,Implement a virtual machine with bytecode interpreter,Not Started
+Systems Programming Projects,4,Build a network protocol stack (simplified TCP/IP),Not Started
+Systems Programming Projects,5,Create a filesystem implementation (simple FAT-like),Not Started
+Systems Programming Projects,6,Implement a process sandbox using namespaces,Not Started
+Systems Programming Projects,7,Build a container runtime (simplified Docker-like),Not Started
+Systems Programming Projects,8,Create a kernel module for character device,Not Started
+Systems Programming Projects,9,Implement a distributed hash table,Not Started
+Systems Programming Projects,10,Build a real-time system scheduler,Not Started
