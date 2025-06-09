@@ -9,7 +9,7 @@ int main(void)
 
 	printf("sizeof num is %d\n", (int)sizeof(num));
 	printf("sizeof ch is %d\n", (int)sizeof(ch));
-	printf("sizeof p is %d\n", (int)sizeof(*p));
+	printf("sizeof *p is %d\n", (int)sizeof(p));
 
 	return 0;
 }
