@@ -19,10 +19,14 @@ void unpack_bytes(int value, char *out)
 {
 	int sz = (int)sizeof(value);
 	char *v = (char *)&value;
-	for (int i = 0; i < sz; i++)
-		out[i] = v[i];
+	int i = 0;
 
-	out[sz] = '\0';
+	while (i < sz) {
+		*out++ = *v++;
+		i++;
+	}
+
+	*out = '\0';
 }
 
 int main(void)
