@@ -4,7 +4,7 @@ Memory and Data Layout,2,Write a function that manually sets bytes in an int usi
 Memory and Data Layout,3,Demonstrate padding and alignment in a struct with mixed types,Finished
 Memory and Data Layout,4,Implement a byte-level memcpy using pointers,Finished
 Memory and Data Layout,5,Visualize a struct in memory by dumping its byte layout,Finished
-Memory and Data Layout,6,Show the difference between little-endian and big-endian,Not Started
+Memory and Data Layout,6,Show the difference between little-endian and big-endian,Finished
 Memory and Data Layout,7,Manually swap bytes in an int to convert between endianness,Not Started
 Memory and Data Layout,8,Use a union to alias a float and int and inspect the representation,Not Started
 Memory and Data Layout,9,Read an array of structs from raw memory using pointer arithmetic,Not Started
